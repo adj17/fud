@@ -1,0 +1,338 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* navbar */
+.buttonhome {
+  padding: .2em .1em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color:  #000000;
+  transition: all 1000ms;
+  font-size: 15px;
+
+  overflow: hidden;
+  outline: 2px solid  #ffffff;
+}
+
+.buttonhome:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid   red;
+  box-shadow: 4px 5px 17px -4px #000000;
+}
+
+.buttonhome::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color:  red;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.buttonhome:hover::before {
+  width: 250%;
+}
+
+
+.hop{
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  width: 1000px; 
+  margin: 50px; 
+   
+  transition: transform 0.3s ease;  
+}
+
+.container{
+  height: 50px;
+}
+.img{
+  height: 80px;
+  width: 100px;
+}
+.nav{
+  background-color: #ffffff;
+}
+.con{
+  background-color: #000000;
+  height: 80px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.head1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #ffffff;
+}
+.d-flex{
+  height: 40px;
+  width: 300px;
+}
+.tas{
+  color: #ffffff;
+}
+.bot{
+  color:rgb(0, 0, 0);
+  background-color: #ffffff
+  ;
+  
+}
+.dropdown a {
+  color: #ffffff; 
+}
+.dropdown:hover .dropdown-menu {
+  background-color: red 
+}
+
+/* body */
+.head2{
+  width: 570px;
+background-color: #000000;
+color: #ffffff;
+border-radius: 10px;
+height: 60px;
+margin-left: 470px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.job-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: 16px; 
+
+}
+
+
+
+ 
+.card1{
+  display: flex;
+ 
+  
+}
+.card {
+  margin: 70px;
+}
+.card2{
+  display: flex;
+ 
+  
+}
+.head3{
+  width: 800px;
+background-color: #000000;
+color: #ffffff;
+border-radius: 10px;
+height: 60px;
+margin-left: 370px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.card { 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  width: 300px; 
+  margin: 50px; 
+   
+  transition: transform 0.3s ease;  
+  
+} 
+.card:hover { 
+  transform: scale(1.05); /* Add a scaling effect on hover */ 
+}
+/* footer */
+.foot{
+  background-color: #000000;
+  font-size: 20px;
+  color: #ffffff;
+
+  margin-bottom: 100;
+}
+
+
+/* register */
+.rege{
+  background-color: #000001;
+
+  height:200px;
+}
+.registration-box {
+  color: #ffffff;
+  background-color:rgb(0, 0, 0);
+  margin-top: 70px;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 30px;
+  box-shadow: 0 0 10px rgb(255, 248, 248);
+}.bot1{
+  margin-top: 20px;
+  color: #000000;
+  background-color: #ffffff
+  ;
+}
+.reg{
+ 
+  height: 720px;
+}
+
+/* admin */
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 0, 0);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+ 
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+.dash{
+  background-color:  #000000;
+}
+.req{
+  color: #ffffff;
+}
+/* table */
+.tab{
+  background-color: #000000;
+}
+/* profile */
+.profile{
+  
+  
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile2{
+  height: 500px;
+ 
+}
+.pro{
+  height:100px;
+  border: 5px solid  lightskyblue;
+  box-shadow: 0 0 10px rgb(255, 248, 248);
+}
+.mode{
+  color: red;
+height:300px;
+margin-left: 40px;
+  background-color:#000000;
+  width:400px;
+  border: 5px solid  rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(255, 248, 248);
+}
+.head5{
+  font-family: fantasy;
+
+}
+.head6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:  red;
+}
+.cardp{
+  height:500px
+}
